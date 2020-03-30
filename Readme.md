@@ -10,7 +10,7 @@ int main(){
     std::vector<int > v;
     std::vector<std::string > sv;
     v.push_back(1);
-    v.psuh_back(2);
+    v.push_back(2);
     sv.push_back("one");
     sv.push_back("two");
     for(auto x:sv){
