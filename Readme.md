@@ -50,5 +50,14 @@ iv.push_back(2);
 for(int i=0;i<iv.size();i++)
   iv[i]=i;
 ```
-Since vectors are required by the c++ standard to use contiguous memory we can only add and remove(as oppposed to change) from the end of a vector.
-   
+Since vectors are required by the c++ standard to use contiguous memory 
+we can only add and remove(as oppposed to change) from the end of a vector.
+## Lists 
+Lists are similar to vectors but allow us to insert elements at arbitrary
+positions. So in addition to push_back() a list supports push_front() and 
+insert. The insert method has the following type
+```
+iterator insert(iterator itr, object o)
+```
+So insert adds an element **before** the element pointed to by itr
+and returns an iterator to the inserted element.
