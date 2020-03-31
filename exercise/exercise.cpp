@@ -19,18 +19,5 @@ int main()
 		std::cout << x << "|";
 	}
 	std::cout << std::endl;
-	std::list<std::string>::iterator itr = l.begin();
-	while (itr != l.end()) {
-		if (*itr == "one") {
-			*itr = "ONE";
-			l.insert(itr, "->");
-		}
-		itr++;
-
-	}
-	for (auto x : l) {
-		std::cout << x;
-		if(x!="->")std::cout<<"|";
-	}
-	std::cout << std::endl;
+	
 }

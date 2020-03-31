@@ -55,9 +55,16 @@ we can only add and remove(as oppposed to change) from the end of a vector.
 ## Lists 
 Lists are similar to vectors but allow us to insert elements at arbitrary
 positions. So in addition to push_back() a list supports push_front() and 
-insert. The insert method has the following type
+insert. The insert method has the following signature
 ```
 iterator insert(iterator itr, object o)
 ```
 So insert adds an element **before** the element pointed to by itr
 and returns an iterator to the inserted element.
+### Exercise
+Run the code in project lists (don't forget to set as startup project)
+### Exercise
+Go to project **exercise** and add code to perform the following
+1. Finds every occurrence of the string "one" and replace it by "ONE"
+2. After the substitution insert "->" before "ONE"
+3. Print the elements of the list but make sure not to output an "|" after "->"
