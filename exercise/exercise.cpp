@@ -19,5 +19,6 @@ int main()
 		std::cout << x << "|";
 	}
 	std::cout << std::endl;
+	exit(1);
 	
 }
