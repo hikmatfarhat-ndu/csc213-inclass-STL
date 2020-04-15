@@ -2,6 +2,7 @@
 # Standard Template Library (STL)
 The STL is a generic programming library that provides implementation for common data structures and algorithm. If you find yourself needing a certain data structure or algorithm most likely you will find it implemented in the STL. 
 STL is very large (its standard is over 700 pages) so obviously we will not cover all of it. We will divide  our coverage of the STL into two parts: Containers and Algorithms.
+
 ## Containers
 A container object stores data. Since the type of data is more or less arbitrary the implementation uses templates to accomplish this.
 We will start with the vector class.
@@ -51,5 +52,23 @@ iv.push_back(2);
 for(int i=0;i<iv.size();i++)
   iv[i]=i;
 ```
+
 Since vectors are required by the c++ standard to use contiguous memory we can only add and remove(as oppposed to change) from the end of a vector.
-   
+Since vectors are required by the c++ standard to use contiguous memory 
+we can only add and remove(as oppposed to change) from the end of a vector.
+## Lists 
+Lists are similar to vectors but allow us to insert elements at arbitrary
+positions. So in addition to push_back() a list supports push_front() and 
+insert. The insert method has the following signature
+```
+iterator insert(iterator itr, object o)
+```
+So insert adds an element **before** the element pointed to by itr
+and returns an iterator to the inserted element.
+### Exercise
+Run the code in project lists (don't forget to set as startup project)
+### Exercise
+Go to project **exercise** and add code to perform the following
+1. Finds every occurrence of the string "one" and replace it by "ONE"
+2. After the substitution insert "->" before "ONE"
+3. Print the elements of the list but make sure not to output an "|" after "->"

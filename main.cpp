@@ -1,41 +1,45 @@
 #include <iostream>
 #include <vector>
-class Test {
-    int val;
-    public:
-    Test(int v=0):val(v){
-        //std::cout<<"constructor"<<std::endl;
-    }
-    Test(const Test & rhs){
-        //std::cout<<"copy constructor"<<std::endl;
-        val=rhs.val;
-    }
-    Test& operator=(const Test& rhs){
-        //std::cout<<"assignment"<<std::endl;
-        val=rhs.val;
-        return *this;
+#include "Room.h"
 
-    }
-    int getVal(){return val;}
-};
+int main() {
+    /* std::vector<Room*> rvp;
+     std::vector<Room> rvo;
+     Office a("S311", "FNAS", "John");
+     ClassRoom b("S102", "FNAS", 40);
+     rvp.push_back(&a);
+     rvp.push_back(&b);
+     rvo.push_back(a);
+     rvo.push_back(b);
+     rvo.push_back(Office("S333", "FNAS", "Jack"));
+     for (int i = 0; i < rvp.size(); i++) {
+         std::cout << rvp[i]->print() << std::endl;
+     }
+     for (auto r : rvp) {
+         std::cout << r->print() << std::endl;
+     }
+     for (auto r : rvo) {
+         std::cout << r.print() << std::endl;
+     }
+     rvo.pop_back();
+     std::cout << "After removing the last item " << std::endl;
+     for (auto r : rvo) {
+         std::cout << r.print()<<std::endl;
+     }*/
+    std::vector<NoCopy> v;
+    NoCopy a(17);
+    NoCopy b(33);
+    /* by default vector and all containers?
+       use copy constructor unless it is a
+       temporary they use move constructor
+       */
+    v.push_back(NoCopy(18));
+    v.push_back(std::move(b));
 
-int main(){
-    std::vector<Test> v;
-    std::vector<std::string> sv;
-    sv.push_back("one");
-    sv.push_back("two");
-    //Test a(1),b(2),c(3),c(4);
-    //for(int i=0;i<5;i++)
-     // v.push_back(a);
-    int a[]={1,2,3,4};
-        std::cout<<"starting"<<std::endl;
-     std::vector<std::string>::iterator p;
-    for(p=sv.begin();p!=sv.end();p++)
-       std::cout<<*p<<std::endl;
-    //for(auto & x:v){
-         //std::cout<<x.getVal()<<std::endl;
-      //   x=17;
-   // }
-    /*for(auto x:v)
-      std::cout<<x.getVal()<<std::endl;*/
+    for (auto& x : v) {
+        x.setX(99);
+    }
+    for (auto& x : v)
+        std::cout << x.getX() << std::endl;
+    std::cout << b.getX()<<"done\n";
 }
