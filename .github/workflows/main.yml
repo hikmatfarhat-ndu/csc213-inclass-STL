@@ -28,7 +28,7 @@ jobs:
       run: echo Hello, world!
 
     - name: Python file
-      run: ./run_ptyhon.py
+      run: ./run_python.py
     
     - name: Create Issue From File
       uses: peter-evans/create-issue-from-file@v2.2.0
