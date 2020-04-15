@@ -1,5 +1,5 @@
 all: build
-	exercise/exercise >./example-content/output.md
+	exercise/exercise
 build: exercise/exercise.cpp
 	g++ exercise/exercise.cpp -o exercise/exercise
 
