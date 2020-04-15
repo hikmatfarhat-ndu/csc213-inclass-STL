@@ -25,7 +25,6 @@ jobs:
       run: pip install PyGithub
 #    - name: add collab
 #      run: python add_one_collab_github.py
-defaults:
     - name: add comment
       run: python add_comment_to_pull_github.py
     - name: make
