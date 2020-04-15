@@ -23,8 +23,11 @@ jobs:
     - uses: actions/checkout@v2
     - name: pip install
       run: pip install PyGithub
-    - name: add collab
-      run: python add_one_collab_github.py
+#    - name: add collab
+#      run: python add_one_collab_github.py
+defaults:
+    - name: add comment
+      run: python add_comment_to_pull_github.py
     - name: make
       run: make
       
