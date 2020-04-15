@@ -3,7 +3,7 @@
 #include <iostream>
 #include <list>
 int main()
-
+{
 	std::list<std::string> l;
 	l.push_back("one");
 	l.push_back("two");
