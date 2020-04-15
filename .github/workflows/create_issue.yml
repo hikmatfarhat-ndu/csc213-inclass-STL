@@ -1,8 +1,0 @@
-- name: Create Issue From File
-  uses: peter-evans/create-issue-from-file@v2.2.0
-  with:
-        title: An example issue
-        content-filepath: ./template/output.md
-        labels: report, automated issue
-        project: Example Project
-        project-column: To do
