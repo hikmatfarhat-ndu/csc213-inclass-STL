@@ -1,6 +1,7 @@
 # Standard Template Library (STL)
 The STL is a generic programming library that provides implementation for common data structures and algorithm. If you find yourself needing a certain data structure or algorithm most likely you will find it implemented in the STL. 
 STL is very large (its standard is over 700 pages) so obviously we will not cover all of it. We will divide  our coverage of the STL into two parts: Containers and Algorithms.
+
 ## Containers
 A container object stores data. Since the type of data is more or less arbitrary the implementation uses templates to accomplish this.
 We will start with the vector class.
