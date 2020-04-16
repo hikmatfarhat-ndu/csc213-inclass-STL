@@ -9,12 +9,7 @@ int main(int argc,char **argv)
 	l.push_back("two");
 	l.push_back("three");
 	l.push_back("one");
-	l.push_back("five");
-	l.push_back("six");
-	l.push_back("seven");
-	l.push_back("eight");
-	l.push_back("one");
-	l.push_back("nine");
+	
 	if(argc>1)std::cout<<"Commit: "<<"c38782a3007b09f9c2fe5a86853ec9b74c6ce100 .. "<<argv[1]<<" \n";
 	std::cout<<"**Your output is** \n\n";
 	for (auto x : l) {
