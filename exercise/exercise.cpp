@@ -10,7 +10,8 @@ int main(int argc,char **argv)
 	l.push_back("three");
 	l.push_back("one");
 	l.push_back("999");
-	if(argc>1)std::cout<<"Commit: "<<"c38782a3007b09f9c2fe5a86853ec9b74c6ce100 ... "<<argv[1]<<" \n";
+	if(argc>1)std::cout<<"https://github.com/hikmatfarhat-ndu/csc213-inclass-STL/compare/ "
+	<<"c38782a3007b09f9c2fe5a86853ec9b74c6ce100 ... "<<argv[1]<<" \n";
 	std::cout<<"**Your output is** \n\n";
 	for (auto x : l) {
 		std::cout << x << " | ";
