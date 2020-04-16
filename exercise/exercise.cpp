@@ -2,7 +2,7 @@
 #include <list>
 
 
-int main()
+int main(int argc,char **argv)
 {
 	std::list<std::string> l;
 	l.push_back("one");
@@ -15,6 +15,7 @@ int main()
 	l.push_back("eight");
 	l.push_back("one");
 	l.push_back("nine");
+	if(argc>1)std::cout<<"Commit: "<<argv[1]<<" \n";
 	std::cout<<"**Your output is** \n\n";
 	for (auto x : l) {
 		std::cout << x << " | ";
