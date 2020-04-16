@@ -19,5 +19,5 @@ int main(int argc,char **argv)
 	std::cout << std::endl;
 	std::cout<<"\n\n**IT SHOULD BE** \n\n";
 	std::cout<<"1 2 3 4 5 6\n";
-	//exit here
+	//exit here and there
 }
