@@ -21,14 +21,15 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+    - name: make
+      run: make
     - name: pip install
       run: pip install PyGithub
 #    - name: add collab
 #      run: python add_one_collab_github.py
     - name: add comment
       run: python add_comment_to_pull_github.py
-    - name: make
-      run: make
+   
       
     # Runs a single command using the runners shell
     - name: Run a one-line script
